@@ -56,3 +56,9 @@
         visibility: visible;
     }
 }
+.hero-section {
+    background: url('img/bg.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
