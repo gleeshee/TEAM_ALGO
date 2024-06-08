@@ -41,6 +41,22 @@
         </div>
     </nav>
 </header>
+<main>
+    <!-- HERO-->
+    <section class="hero-section">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+            <marquee direction="left" scrollamount="10">
+                <h1>Welcome, Kabarangay</h1>
+            </marquee>
+            <p>
+                Welcome, Kabarangay! We're thrilled to have you here, where our community spirit thrives. 
+                Join us as we work together to create a brighter and stronger neighborhood for everyone.
+            </p>
+        </div>
+    </section>
+    <!-- End  -->
+</main>
+
 
 </body>
 </html>
