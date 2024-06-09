@@ -56,6 +56,22 @@
     </section>
     <!-- End  -->
 </main>
+<!-- About -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"style="background-color: black;" >
+            <div class="modal-header">
+                <h5 class="modal-title" id="aboutModalLabel" style="color: #009970;">About Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"style="color: white;">
+                <p>
+                    BarangayConnect is dedicated to building a stronger community by connecting residents and providing essential services. Our mission is to foster a sense of belonging and support for everyone in our neighborhood.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </body>
