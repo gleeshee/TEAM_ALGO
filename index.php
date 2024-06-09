@@ -72,7 +72,22 @@
         </div>
     </div>
 </div>
-
+<!-- Service Modal -->
+<div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"style="background-color: black;" >
+            <div class="modal-header">
+                <h5 class="modal-title" id="serviceModalLabel" style="color: #009970;">Our Services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"style="color: white;">
+                <p>
+                    We offer a range of services including community events, support programs, and information resources to help residents stay connected and informed. Join us to make a positive impact in our neighborhood.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
