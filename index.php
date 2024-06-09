@@ -88,6 +88,23 @@
         </div>
     </div>
 </div>
+    <!-- Contact -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"style="background-color: black;" >
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel" style="color: #009970;">Contact Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"style="color: white;">
+                <p>
+                    Have questions or need assistance? Contact us at info@barangayconnect.com or call +6396478342 We're here to help and look forward to connecting with you.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>
