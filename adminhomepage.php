@@ -157,3 +157,15 @@ href="style.css">
                 <form method="post" action="announcements.php">
                     <div class="mb-3">
                         <label 
+for="announcementDetails" class="form-label">Details/Description</label>
+                        <textarea class="form-control" id="announcementDetails" name="details" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
