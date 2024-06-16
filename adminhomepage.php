@@ -89,3 +89,23 @@ href="style.css">
     bottom: 0;
     left: 0;
 }
+.hero-sec .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+
+
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top" style="padding: 20px; background-color:#DCDCDC;">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.php" style="color:#ff1493;">BarangayConnect</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
