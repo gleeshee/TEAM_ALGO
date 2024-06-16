@@ -239,3 +239,20 @@ function updateComplaintStatus(status) {
         });
     }
 }
+function nextComplaint() {
+    currentComplaintIndex++;
+    displayComplaint();
+}
+
+document.getElementById('nextButton').addEventListener('click', nextComplaint);
+
+document.addEventListener('DOMContentLoaded', loadComplaints);
+</script>
+
+<!-- User Profile Modal -->
+<!-- User Profile Modal -->
+<div class="modal fade" id="userProfileModal" tabindex="-1" aria-labelledby="userProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+            <div class="modal-body"  style="background-color: rgba(255, 182, 193, 0.5);">
+                <div class="table-responsive">
