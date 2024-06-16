@@ -590,3 +590,30 @@ function deleteUserProfile(id) {
 }
 </script>
 
+<!-- Medicines Supply  -->
+<div class="modal fade" id="medicinesSupplyModal" tabindex="-1" aria-labelledby="medicinesSupplyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mt-5">
+        <div class="modal-content"style="background-color:#FAF0E6;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="medicinesSupplyModalLabel">Medicines Supply</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="MedicinesUpdate.php">
+                    <div class="mb-3">
+                        <label for="medicineName" class="form-label">Medicine Name</label>
+                        <input type="text" class="form-control" id="medicineName" name="name">
+                    </div>
+     <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" min="0">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
