@@ -109,3 +109,24 @@ href="style.css">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Admin</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+<div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3" style="color: white;">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#postAnnouncementsModal">Post Announcements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#complainsModal">Complains</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#medicinesSupplyModal">Medicines Supply</a>
+                        </li>
+                        <li class="nav-item">
+                         <a class="nav-link mx-lg-2" href="#" data-bs-toggle="modal" data-bs-target="#userProfileModal">Users Profile</a>
+
+                        </li>
+                    </ul>
+ 
+
+
+                </div>
+            </div>
