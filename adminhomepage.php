@@ -73,3 +73,19 @@ href="style.css">
         box-shadow: 0 8px 32px black, 0 12px 64px black;
         border-radius: 8px;
     }
+
+    .hero-sec{
+    background: url('img/adminn.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+   }
+.hero-sec:before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
