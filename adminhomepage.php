@@ -549,3 +549,21 @@ document.addEventListener('DOMContentLoaded', loadComplaints);
                             echo "<td>" . $row["name"] . "</td>";
                             echo "<td>" . $row["email"] . "</td>";
                             echo "<td>" . $row["address"] . "</td>";
+echo "<td><img src='data:image/jpeg;base64," . base64_encode($row["photo"]) . "' alt='User Photo' style='width:100px;height:100px;'></td>";
+                            echo "<td><button class='btn btn-danger btn-sm' onclick='deleteUserProfile(" . $row["id"] . ")'><i class='bi bi-trash'></i></button></td>"; 
+                            echo "</tr>";
+                        }
+                        echo "</tbody>";
+                        echo "</table>";
+                    } else {
+                        echo "No user profiles found.";
+                    }
+
+               
+                    mysqli_close($conn);
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
