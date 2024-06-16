@@ -206,3 +206,17 @@ function loadComplaints() {
             }
         });
 }
+function displayComplaint() {
+    if (currentComplaintIndex < complaints.length) {
+        const complaint = complaints[currentComplaintIndex];
+        const complaintFrameDoc = document.getElementById('complaintFrame').contentDocument;
+        complaintFrameDoc.body.innerHTML = `
+            <p><strong>Name:</strong> ${complaint.name}</p>
+            <p><strong>Address:</strong> ${complaint.address}</p>
+            <p><strong>Title:</strong> ${complaint.title}</p>
+            <p><strong>Description:</strong> ${complaint.description}</p>
+        `;
+    } else {
+        document.getElementById('complaintFrame').contentDocument.body.innerHTML = "<p>No more complaints.</p>";
+    }
+}
