@@ -11,3 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    
     $sql = "INSERT INTO announcements (title, details) VALUES (:title, :details)";
+
+// Using prepared statements to prevent SQL injection
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(':title', $title);
+    $stmt->bindParam(':details', $details);
