@@ -220,3 +220,22 @@ function displayComplaint() {
         document.getElementById('complaintFrame').contentDocument.body.innerHTML = "<p>No more complaints.</p>";
     }
 }
+function updateComplaintStatus(status) {
+    if (currentComplaintIndex < complaints.length) {
+        const complaint = complaints[currentComplaintIndex];
+        fetch('update_complaint_status.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ complaintId: complaint.complaint_id, status: status })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert(`Complaint has been ${status}.`);
+                nextComplaint();
+            } else {
+                alert('Failed to update status: ' + data.message);
+            }
+        });
+    }
+}
