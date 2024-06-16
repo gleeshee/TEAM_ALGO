@@ -189,3 +189,20 @@ for="announcementDetails" class="form-label">Details/Description</label>
         </div>
     </div>
 </div>
+
+<script>
+let currentComplaintIndex = 0;
+let complaints = [];
+
+function loadComplaints() {
+    fetch('retrieve_complaints.php')
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                alert(data.error);
+            } else {
+                complaints = data;
+                displayComplaint();
+            }
+        });
+}
