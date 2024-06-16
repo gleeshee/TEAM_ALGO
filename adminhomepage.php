@@ -169,3 +169,23 @@ for="announcementDetails" class="form-label">Details/Description</label>
         </div>
     </div>
 </div>
+
+<!-- Complains  -->
+<div class="modal fade" id="complainsModal" tabindex="-1" aria-labelledby="complainsModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered mt-5">
+        <div class="modal-content" style="background-color:#FAF0E6;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="complainsModalLabel">Complains</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe id="complaintFrame" src="about:blank" style="width: 100%; height: 300px; border: none;"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" onclick="updateComplaintStatus('declined')">Decline</button>
+                <button type="button" class="btn btn-success" onclick="updateComplaintStatus('accepted')">Accept</button>
+                <button type="button" class="btn btn-primary" id="nextButton">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
