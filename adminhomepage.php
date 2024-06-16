@@ -567,3 +567,26 @@ echo "<td><img src='data:image/jpeg;base64," . base64_encode($row["photo"]) . "'
         </div>
     </div>
 </div>
+<script>
+function deleteUserProfile(id) {
+    if (confirm("Are you sure you want to delete this user profile?")) {
+        fetch(`delete_user_profile.php?id=${id}`, {
+            method: 'GET'
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+            
+                document.getElementById(`userProfileRow_${id}`).remove();
+            } else {
+                alert("Failed to delete the user profile.");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("An error occurred while deleting the user profile.");
+        });
+    }
+}
+</script>
+
