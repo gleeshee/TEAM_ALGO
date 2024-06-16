@@ -130,3 +130,18 @@ href="style.css">
 
                 </div>
             </div>
+<button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!--Hero -->
+    <section class="hero-sec">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+        </div>
+    </section>
+    <!--End -->
+</main>
