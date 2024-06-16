@@ -41,3 +41,21 @@ href="style.css">
         background-color: white; 
         border-radius: 10px; 
     }
+ 
+.modal-content {
+        overflow-y: auto; 
+    }
+       .table {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .table th, .table td {
+            color: black;
+            background-color: #ffb6c1;
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
