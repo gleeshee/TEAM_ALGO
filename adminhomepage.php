@@ -59,3 +59,17 @@ href="style.css">
             padding: 12px;
             text-align: left;
         }
+
+    .table th {
+            background-color: #ffb6c1;
+        }
+
+        .table img {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 0;
+        }
+        .modal-content {
+        box-shadow: 0 8px 32px black, 0 12px 64px black;
+        border-radius: 8px;
+    }
