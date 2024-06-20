@@ -16,3 +16,11 @@ if ($id > 0) {
      $stmt = $conn->prepare("DELETE FROM userprofile WHERE id = ?"):
 
 $stmt->bind_param('i", $id):
+
+if ($stmt->execute[]) {
+
+echo json_encode(['success' => true]):
+}else {
+
+echo json_encode (['succes'=> false, ' message '=> Failed to delete user profile. ']);
+}
