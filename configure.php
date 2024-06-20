@@ -1,3 +1,4 @@
+<?php
 $host = ' Localhost ';
 $db = " barangayconnect ";
 $user = " root ";
