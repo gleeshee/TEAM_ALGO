@@ -2,7 +2,7 @@ include configure.php";
 
 CHATROOM
 
-function getStatus FromDatabase (ScomplaintId) {
+function getStatus FromDatabase ($complaintId) {
 
 global $pdo;
 
@@ -12,7 +12,7 @@ $sql = "SELECT status FROM Complaints WHERE id :complaintId";
 
 $stmt = $pdo->prepare($sql):
 
-$stmt->bindParam("complaintId". ScomplaintId, PDO:: PARAM INT); $stmt->execute();
+$stmt->bindParam("complaintId". $complaintId, PDO:: PARAM INT); $stmt->execute();
 
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -26,9 +26,9 @@ return "Error: Complaint ID not found or status not available."
 
 }
 
-} catch (PDOException Se) [
+} catch (PDOException $e) [
 
-return "Error: Se->getMessage();
+return "Error: $e->getMessage();
 }
 
 }
@@ -52,6 +52,6 @@ echo 'Error: Complaint ID must be an integer.";
 
 echo "Error: Complaint ID is not provided.";
 
-1
+}
 
 ?>
