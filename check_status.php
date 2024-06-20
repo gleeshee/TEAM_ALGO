@@ -32,3 +32,13 @@ return "Error: Se->getMessage();
 }
 
 }
+
+if ($-SERVER['REQUEST_METHOD"] == "POST" && isset($_POST['complaintId']]] E
+
+$complaintId $ POST['complaintId'];
+
+if (filter_var($complaintId. FILTER VALIDATE_INT)) {
+
+$status = getStatus FromDatabase($complaintId);
+
+echo "Your complaint status is: $status:
