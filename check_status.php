@@ -46,7 +46,7 @@ echo "Your complaint status is: $status:
 
 echo 'Error: Complaint ID must be an integer.";
 
-1
+}
 
 } else {
 
