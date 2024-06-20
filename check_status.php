@@ -42,3 +42,16 @@ if (filter_var($complaintId. FILTER VALIDATE_INT)) {
 $status = getStatus FromDatabase($complaintId);
 
 echo "Your complaint status is: $status:
+} else {
+
+echo 'Error: Complaint ID must be an integer.";
+
+1
+
+} else {
+
+echo "Error: Complaint ID is not provided.";
+
+1
+
+?>
