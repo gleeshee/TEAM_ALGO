@@ -10,3 +10,10 @@ $options = [
      PDO ::ATTR_DEFAULT_FETCH_MODE => PDO ::FETCH _ASSOC,
      PDO ::ATTR_EMULATE_PREPARES     fasle,
 ];
+
+try {
+    $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+   throw new \PDOException ($e->getMessage() , (int) $e->getCode());
+}
+?>
