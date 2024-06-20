@@ -24,3 +24,13 @@ echo json_encode(['success' => true]):
 
 echo json_encode (['succes'=> false, ' message '=> Failed to delete user profile. ']);
 }
+
+$stmt->close();
+
+}else {
+
+echo json_encode{['success'=> false, 'message'=> 'Invalid ID.'):
+}
+
+$conn)??//->close(};
+?>
