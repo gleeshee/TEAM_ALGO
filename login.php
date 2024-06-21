@@ -15,3 +15,16 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($user && password_verify($password, $user['password'])) {
 session_start();
  $_SESSION['email'] = $email;
+
+header("Location: welcome.php"): exit();
+} else {
+echo "Invalid email or password";
+}
+} catch(PDOException $e) {
+echo "Error: ". $e->getMessage();
+}
+$conn=null;
+
+}
+
+?>
